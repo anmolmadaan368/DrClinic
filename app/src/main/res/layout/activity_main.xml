@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="237dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/custom_edittetext"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editDOB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editDOB"
+        android:layout_width="237dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_edittetext"
+        android:ems="10"
+        android:hint="DOB"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+    <EditText
+        android:id="@+id/editGender"
+        android:layout_width="237dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_edittetext"
+        android:ems="10"
+        android:hint="Gender"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDOB" />
+
+    <EditText
+        android:id="@+id/editDepartment"
+        android:layout_width="237dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_edittetext"
+        android:ems="10"
+        android:hint="Department"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editGender" />
+
+    <EditText
+        android:id="@+id/editAddress"
+        android:layout_width="237dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_edittetext"
+        android:ems="10"
+        android:hint="Address"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDepartment" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="57dp"
+        android:layout_height="77dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_notification_overlay" />
+
+    <Button
+        android:id="@+id/btnAttach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="88dp"
+        android:text="Attach"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAddress" />
+
+    <TextView
+        android:id="@+id/txtAttach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAttach"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:text="Send"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAttach" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAddress">
+
+
+        <EditText
+            android:id="@+id/edtSetDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/imgCancelDate"
+            android:clickable="true"
+            android:cursorVisible="false"
+            android:drawableRight="@drawable/ic_date_range_black_24dp"
+            android:drawableTint="@color/colorAccent"
+            android:focusable="false"
+            android:hint="@string/set_date" />
+
+        <ImageView
+            android:id="@+id/imgCancelDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_cancel_black_24dp"
+            android:visibility="gone"
+            app:tint="@color/colorAccent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayoutDate">
+
+        <EditText
+            android:id="@+id/edtSetTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/imgCancelTime"
+            android:clickable="true"
+            android:cursorVisible="false"
+            android:drawableRight="@drawable/ic_access_time_black_24dp"
+            android:drawableTint="@color/colorAccent"
+            android:focusable="false"
+            android:hint="@string/set_time" />
+
+        <ImageView
+            android:id="@+id/imgCancelTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_cancel_black_24dp"
+            android:visibility="gone"
+            app:tint="@color/colorAccent" />
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

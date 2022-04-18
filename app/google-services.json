@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "560305155142",
+    "project_id": "dr-clinic-2f205",
+    "storage_bucket": "dr-clinic-2f205.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560305155142:android:6800344b4b9b62c67fae47",
+        "android_client_info": {
+          "package_name": "com.example.drclinic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560305155142-qfngvo8e9vjdgi6sgi3bgunhug57ifm5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM89UAe7-wIOfZK465CCINbr2qAaxdEfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "560305155142-qfngvo8e9vjdgi6sgi3bgunhug57ifm5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
